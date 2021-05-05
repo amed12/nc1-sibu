@@ -13,4 +13,5 @@ struct Recommendation {
     var subtitle :String
     var image :String
     var nominal :Double
+    var description :String
 }

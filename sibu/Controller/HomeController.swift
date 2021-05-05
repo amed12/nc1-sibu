@@ -93,6 +93,14 @@ extension HomeController :UITableViewDelegate,UITableViewDataSource,EmptyStateVi
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if !isRecommendationEmpty {
+            let description = model.getRecommendationBudget(budgetPriority: indexPath.row).description
+            let title = model.getRecommendationBudget(budgetPriority: indexPath.row).title
+            showAlert(title: title, subtitle: description)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return isRecommendationEmpty ? 350 : 65
     }
@@ -100,6 +108,14 @@ extension HomeController :UITableViewDelegate,UITableViewDataSource,EmptyStateVi
     
     func didClickButtonAddSalary() {
         self.performSegue(withIdentifier: "toAddSalary", sender: self)
+    }
+    
+    func showAlert(title:String, subtitle:String) {
+        let alertController = UIAlertController(title: title, message:
+                subtitle, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+
+            self.present(alertController, animated: true, completion: nil)
     }
     
 }
