@@ -65,6 +65,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seH-GV-dSG" customClass="DefaultButton" customModule="sibu" customModuleProvider="target">
+                                <rect key="frame" x="95" y="740" width="200" height="32"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.01176470588" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ChA-MR-B0f"/>
+                                    <constraint firstAttribute="height" constant="32" id="ZRW-kz-aNx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Reset Salary">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FI1-LR-W5D"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -72,10 +88,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FSp-Fb-IOB" secondAttribute="trailing" id="6HQ-M6-Osd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gv6-9k-Tn0" secondAttribute="trailing" constant="16" id="6qp-Kv-PlN"/>
                             <constraint firstItem="FSp-Fb-IOB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="99T-B9-QtR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="seH-GV-dSG" secondAttribute="trailing" constant="95" id="A0B-4o-QEn"/>
                             <constraint firstItem="EB6-CX-87a" firstAttribute="top" secondItem="FSp-Fb-IOB" secondAttribute="top" constant="125" id="Hum-Cb-lbn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7wf-oj-GJR" secondAttribute="trailing" constant="153" id="KQR-IN-dTs"/>
                             <constraint firstItem="FSp-Fb-IOB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QR8-bZ-SK7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FSp-Fb-IOB" secondAttribute="bottom" id="UDQ-PQ-A8U"/>
+                            <constraint firstItem="seH-GV-dSG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="UMG-VU-LSu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nq7-Fa-Z0x" secondAttribute="trailing" constant="283" id="UsM-lA-aiy"/>
                             <constraint firstItem="wsk-3y-u76" firstAttribute="top" secondItem="7wf-oj-GJR" secondAttribute="bottom" constant="3" id="Xi3-Hb-PyL"/>
                             <constraint firstAttribute="trailing" secondItem="kjb-fF-2eS" secondAttribute="trailing" id="ZmD-A6-oN1"/>
@@ -83,6 +101,7 @@
                             <constraint firstItem="Gv6-9k-Tn0" firstAttribute="top" secondItem="FSp-Fb-IOB" secondAttribute="top" id="ctx-99-Es2"/>
                             <constraint firstItem="kjb-fF-2eS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dRr-AB-Our"/>
                             <constraint firstItem="EB6-CX-87a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eBV-fA-FrB"/>
+                            <constraint firstItem="seH-GV-dSG" firstAttribute="top" secondItem="EB6-CX-87a" secondAttribute="bottom" constant="16" id="hsg-aV-czR"/>
                             <constraint firstAttribute="trailing" secondItem="wsk-3y-u76" secondAttribute="trailing" id="kHh-ca-3d5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EB6-CX-87a" secondAttribute="trailing" id="liH-st-twI"/>
                             <constraint firstItem="7wf-oj-GJR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="oTI-lv-y43"/>
@@ -95,6 +114,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnReset" destination="seH-GV-dSG" id="o5X-Qx-Om2"/>
                         <outlet property="homeTableView" destination="EB6-CX-87a" id="dKX-ej-4Zj"/>
                         <outlet property="lblSalary" destination="Gv6-9k-Tn0" id="iqX-nf-vU2"/>
                         <outlet property="tableHeight" destination="zyB-Ug-ETa" id="vZY-ZS-hqz"/>

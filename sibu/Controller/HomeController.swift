@@ -13,6 +13,7 @@ class HomeController: UIViewController {
     
     @IBOutlet weak var homeTableView: UITableView!
     
+    @IBOutlet weak var btnReset: DefaultButton!
     @IBOutlet weak var tableHeight: NSLayoutConstraint!
     var isRecommendationEmpty = true
     var salary = 0.0
@@ -54,9 +55,16 @@ class HomeController: UIViewController {
         if let sourceViewController = seg.source as? AddSalaryController {
             salary = sourceViewController.dataPassed
             setupView()
+            btnReset.isHidden = false
         }
     }
-
+    @IBAction func onClickReset(_ sender: Any) {
+        salary = 0
+        btnReset.isHidden = true
+        lblSalary.text = "Not Set"
+        setupView()
+    }
+    
 }
 
 extension HomeController :UITableViewDelegate,UITableViewDataSource,EmptyStateViewCellDelegate{
