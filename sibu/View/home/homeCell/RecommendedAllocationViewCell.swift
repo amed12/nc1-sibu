@@ -9,6 +9,11 @@ import UIKit
 
 class RecommendedAllocationViewCell: UITableViewCell {
 
+    @IBOutlet weak var nominal: UILabel!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var subtitle: UILabel!
+    @IBOutlet weak var icon: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

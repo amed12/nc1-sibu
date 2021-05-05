@@ -94,6 +94,7 @@
                     </view>
                     <connections>
                         <outlet property="homeTableView" destination="EB6-CX-87a" id="dKX-ej-4Zj"/>
+                        <outlet property="lblSalary" destination="Gv6-9k-Tn0" id="iqX-nf-vU2"/>
                         <segue destination="sUL-8u-gaI" kind="show" identifier="toAddSalary" id="9gA-9Z-TeA"/>
                     </connections>
                 </viewController>

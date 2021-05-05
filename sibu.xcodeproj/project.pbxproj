@@ -18,6 +18,8 @@
 		4A8533362641B80100EEB70B /* EmptyStateViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8533342641B80100EEB70B /* EmptyStateViewCell.xib */; };
 		4A85333B2641B82C00EEB70B /* RecommendedAllocationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8533392641B82C00EEB70B /* RecommendedAllocationViewCell.swift */; };
 		4A85333C2641B82C00EEB70B /* RecommendedAllocationViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A85333A2641B82C00EEB70B /* RecommendedAllocationViewCell.xib */; };
+		4A8D4D5A2642B816005C14B4 /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8D4D592642B816005C14B4 /* Recommendation.swift */; };
+		4A8D4D5D2642B98B005C14B4 /* RecommendationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8D4D5C2642B98B005C14B4 /* RecommendationModel.swift */; };
 		4AB27CE7264237570006D5CA /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB27CE6264237570006D5CA /* DefaultButton.swift */; };
 		4AB27CF626424E8B0006D5CA /* AddSalary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB27CF526424E8B0006D5CA /* AddSalary.storyboard */; };
 		4AB27CF926424EC00006D5CA /* AddSalaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB27CF826424EC00006D5CA /* AddSalaryController.swift */; };
@@ -37,6 +39,8 @@
 		4A8533342641B80100EEB70B /* EmptyStateViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateViewCell.xib; sourceTree = "<group>"; };
 		4A8533392641B82C00EEB70B /* RecommendedAllocationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedAllocationViewCell.swift; sourceTree = "<group>"; };
 		4A85333A2641B82C00EEB70B /* RecommendedAllocationViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendedAllocationViewCell.xib; sourceTree = "<group>"; };
+		4A8D4D592642B816005C14B4 /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
+		4A8D4D5C2642B98B005C14B4 /* RecommendationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationModel.swift; sourceTree = "<group>"; };
 		4AB27CE6264237570006D5CA /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		4AB27CF526424E8B0006D5CA /* AddSalary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSalary.storyboard; sourceTree = "<group>"; };
 		4AB27CF826424EC00006D5CA /* AddSalaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSalaryController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 		4A85332D2641B60D00EEB70B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4A8D4D592642B816005C14B4 /* Recommendation.swift */,
+				4A8D4D5C2642B98B005C14B4 /* RecommendationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8D4D5A2642B816005C14B4 /* Recommendation.swift in Sources */,
 				4A45E96B2640FF4D0062EDC3 /* sibu.xcdatamodeld in Sources */,
 				4A8533352641B80100EEB70B /* EmptyStateViewCell.swift in Sources */,
 				4A45E9652640FF4D0062EDC3 /* HomeController.swift in Sources */,
@@ -219,6 +226,7 @@
 				4A85333B2641B82C00EEB70B /* RecommendedAllocationViewCell.swift in Sources */,
 				4AB27CF926424EC00006D5CA /* AddSalaryController.swift in Sources */,
 				4A45E9632640FF4D0062EDC3 /* SceneDelegate.swift in Sources */,
+				4A8D4D5D2642B98B005C14B4 /* RecommendationModel.swift in Sources */,
 				4AB27CE7264237570006D5CA /* DefaultButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

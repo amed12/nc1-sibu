@@ -27,7 +27,6 @@ class EmptyStateViewCell: UITableViewCell {
     }
     
     @IBAction func onButtonAddClick() {
-        print("kamu")
         delegateButton?.didClickButtonAddSalary()
     }
 }
