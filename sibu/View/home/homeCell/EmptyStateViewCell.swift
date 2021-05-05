@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol EmptyStateViewCellDelegate :AnyObject {
+    func didClickButtonAddSalary()
+}
 class EmptyStateViewCell: UITableViewCell {
+    
+    weak var delegateButton : EmptyStateViewCellDelegate?
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,4 +26,8 @@ class EmptyStateViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func onButtonAddClick() {
+        print("kamu")
+        delegateButton?.didClickButtonAddSalary()
+    }
 }

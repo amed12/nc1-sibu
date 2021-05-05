@@ -39,7 +39,7 @@
                                     <constraint firstAttribute="height" constant="2" id="Hnr-eL-lDZ"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EB6-CX-87a">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EB6-CX-87a">
                                 <rect key="frame" x="0.0" y="271" width="390" height="573"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
@@ -94,11 +94,22 @@
                     </view>
                     <connections>
                         <outlet property="homeTableView" destination="EB6-CX-87a" id="dKX-ej-4Zj"/>
+                        <segue destination="sUL-8u-gaI" kind="show" identifier="toAddSalary" id="9gA-9Z-TeA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75.384615384615387" y="88.151658767772503"/>
+        </scene>
+        <!--AddSalary-->
+        <scene sceneID="rEF-x5-quj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddSalary" id="sUL-8u-gaI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hx2-my-BMc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z10-sf-fYZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="133"/>
         </scene>
     </scenes>
     <resources>
