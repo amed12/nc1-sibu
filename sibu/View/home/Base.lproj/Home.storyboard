@@ -42,6 +42,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EB6-CX-87a">
                                 <rect key="frame" x="0.0" y="271" width="390" height="573"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="X9s-ou-sUp"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="j7i-zd-Uv7"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nq7-Fa-Z0x">
                                 <rect key="frame" x="16" y="121" width="91" height="21"/>
@@ -88,6 +92,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gv6-9k-Tn0" secondAttribute="bottom" constant="619" id="zqM-aK-rRm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="homeTableView" destination="EB6-CX-87a" id="dKX-ej-4Zj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
