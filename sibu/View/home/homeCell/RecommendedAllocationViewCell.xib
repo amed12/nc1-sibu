@@ -30,7 +30,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 3.250.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrc-L7-v0F">
-                        <rect key="frame" x="200" y="20" width="130" height="25"/>
+                        <rect key="frame" x="216" y="20" width="118" height="25"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -47,15 +47,13 @@
                     <constraint firstAttribute="bottom" secondItem="Qrc-L7-v0F" secondAttribute="bottom" constant="20" id="6on-WL-ipy"/>
                     <constraint firstItem="ic0-Uf-5Jd" firstAttribute="leading" secondItem="bwK-Dx-f8Z" secondAttribute="trailing" constant="20" id="Fdd-ZT-i7l"/>
                     <constraint firstItem="eV1-j3-hnP" firstAttribute="leading" secondItem="bwK-Dx-f8Z" secondAttribute="trailing" constant="20" id="Liw-eI-jzd"/>
-                    <constraint firstAttribute="trailing" secondItem="Qrc-L7-v0F" secondAttribute="trailing" constant="20" id="Paf-9b-A2b"/>
+                    <constraint firstAttribute="trailing" secondItem="Qrc-L7-v0F" secondAttribute="trailing" constant="16" id="Paf-9b-A2b"/>
                     <constraint firstAttribute="bottom" secondItem="eV1-j3-hnP" secondAttribute="bottom" constant="12" id="Rsr-8s-pW6"/>
                     <constraint firstItem="Qrc-L7-v0F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Tee-gX-O44"/>
                     <constraint firstAttribute="bottom" secondItem="bwK-Dx-f8Z" secondAttribute="bottom" constant="12" id="Zuf-uU-SKN"/>
-                    <constraint firstItem="Qrc-L7-v0F" firstAttribute="leading" secondItem="eV1-j3-hnP" secondAttribute="trailing" constant="20" id="dxh-m4-maU"/>
                     <constraint firstItem="bwK-Dx-f8Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="i1W-03-5c2"/>
                     <constraint firstItem="eV1-j3-hnP" firstAttribute="top" secondItem="ic0-Uf-5Jd" secondAttribute="bottom" constant="2" id="ktv-MP-1BB"/>
                     <constraint firstItem="eV1-j3-hnP" firstAttribute="top" secondItem="ic0-Uf-5Jd" secondAttribute="bottom" constant="2" id="nQX-03-HEz"/>
-                    <constraint firstItem="Qrc-L7-v0F" firstAttribute="leading" secondItem="ic0-Uf-5Jd" secondAttribute="trailing" constant="30" id="pyQ-Ww-sSo"/>
                     <constraint firstItem="bwK-Dx-f8Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="wyz-KX-k6E"/>
                 </constraints>
             </tableViewCellContentView>

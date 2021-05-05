@@ -13,7 +13,7 @@ class HomeController: UIViewController {
     
     @IBOutlet weak var tableHeight: NSLayoutConstraint!
     var isRecommendationEmpty = true
-    var salary = 6500000.0
+    var salary = 3500000.0
     var model = RecommendationModel()
     
     @IBOutlet weak var lblSalary: UILabel!
@@ -21,7 +21,8 @@ class HomeController: UIViewController {
     //to make table view height size fit with content
     override func viewWillLayoutSubviews() {
         super.updateViewConstraints()
-        self.tableHeight?.constant = self.homeTableView.contentSize.height + 90.0
+        let additionalHeight = isRecommendationEmpty ? 350.0 : 90.0
+        self.tableHeight?.constant = self.homeTableView.contentSize.height + CGFloat(additionalHeight)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
