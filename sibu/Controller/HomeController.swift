@@ -34,7 +34,7 @@ class HomeController: UIViewController {
             loadEmptyState()
         }else{
             loadRecomState()
-            lblSalary.text = "Rp. \(salary)0"
+            lblSalary.text = doubleToRupiah(salary)
         }
         homeTableView.reloadData()
     }
@@ -68,7 +68,7 @@ extension HomeController :UITableViewDelegate,UITableViewDataSource,EmptyStateVi
             cell?.title.text = recommendation.title
             cell?.subtitle.text = recommendation.subtitle
             cell?.icon.image = UIImage(named: recommendation.image)
-            cell?.nominal.text = "\(nominal)"
+            cell?.nominal.text = doubleToRupiah(nominal)
             cell?.selectionStyle = .none
             return cell!
         }
