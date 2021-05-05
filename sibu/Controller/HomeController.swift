@@ -13,7 +13,7 @@ class HomeController: UIViewController {
     
     @IBOutlet weak var tableHeight: NSLayoutConstraint!
     var isRecommendationEmpty = true
-    var salary = 3500000.0
+    var salary = 0.0
     var model = RecommendationModel()
     
     @IBOutlet weak var lblSalary: UILabel!
