@@ -22,18 +22,58 @@
                                     <navigationItem title="Add Salary" id="ZA0-p4-mzO"/>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-OD-74p">
+                                <rect key="frame" x="0.0" y="96" width="414" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaF-kr-ooA">
+                                        <rect key="frame" x="20" y="10" width="56.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rp 0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgQ-RL-0ea">
+                                        <rect key="frame" x="92.5" y="5" width="305.5" height="34"/>
+                                        <color key="textColor" red="0.2274509804" green="0.49803921569999998" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="tvChanged:" destination="yY9-s3-KR6" eventType="valueChanged" id="dKN-yt-800"/>
+                                            <outlet property="delegate" destination="yY9-s3-KR6" id="W3Z-LJ-THO"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dgQ-RL-0ea" secondAttribute="trailing" constant="16" id="BAf-ij-BOw"/>
+                                    <constraint firstAttribute="height" constant="44" id="CVF-2z-LFC"/>
+                                    <constraint firstAttribute="width" constant="414" id="U00-vD-u9q"/>
+                                    <constraint firstItem="dgQ-RL-0ea" firstAttribute="leading" secondItem="VaF-kr-ooA" secondAttribute="trailing" constant="16" id="YCj-FB-6KF"/>
+                                    <constraint firstItem="VaF-kr-ooA" firstAttribute="leading" secondItem="zrf-OD-74p" secondAttribute="leading" constant="20" id="fmZ-mY-g6a"/>
+                                    <constraint firstItem="VaF-kr-ooA" firstAttribute="centerY" secondItem="zrf-OD-74p" secondAttribute="centerY" id="olm-tc-wnc"/>
+                                    <constraint firstItem="dgQ-RL-0ea" firstAttribute="centerY" secondItem="zrf-OD-74p" secondAttribute="centerY" id="vhP-aP-bG3"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W3M-B8-kYA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="W3M-B8-kYA" firstAttribute="trailing" secondItem="zrf-OD-74p" secondAttribute="trailing" id="2Zh-32-XO8"/>
+                            <constraint firstItem="zrf-OD-74p" firstAttribute="leading" secondItem="W3M-B8-kYA" secondAttribute="leading" id="3tW-5M-NsS"/>
                             <constraint firstItem="me1-EK-een" firstAttribute="top" secondItem="3fe-Bb-7Hg" secondAttribute="top" id="GOx-4d-ZfJ"/>
                             <constraint firstAttribute="trailing" secondItem="me1-EK-een" secondAttribute="trailing" id="HgA-9q-RrO"/>
+                            <constraint firstItem="zrf-OD-74p" firstAttribute="top" secondItem="W3M-B8-kYA" secondAttribute="top" id="Xcl-4l-vs1"/>
                             <constraint firstItem="me1-EK-een" firstAttribute="leading" secondItem="3fe-Bb-7Hg" secondAttribute="leading" id="qum-Ho-1hl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Salary" id="Sb7-Up-uX3"/>
+                    <connections>
+                        <outlet property="salaryInput" destination="dgQ-RL-0ea" id="IHw-WU-jrd"/>
+                        <outlet property="viewText" destination="zrf-OD-74p" id="mpA-gr-gLc"/>
+                        <segue destination="jjm-xa-Ujg" kind="unwind" identifier="backToA" unwindAction="unwind:" id="Yh2-mE-grx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uxh-uw-bRH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="jjm-xa-Ujg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1255.072463768116" y="-119.19642857142857"/>
         </scene>

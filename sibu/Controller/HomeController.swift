@@ -9,6 +9,8 @@ import UIKit
 
 class HomeController: UIViewController {
     
+    
+    
     @IBOutlet weak var homeTableView: UITableView!
     
     @IBOutlet weak var tableHeight: NSLayoutConstraint!
@@ -47,6 +49,13 @@ class HomeController: UIViewController {
     func loadRecomState()  {
         homeTableView.register(UINib(nibName: "RecommendedAllocationViewCell", bundle: nil), forCellReuseIdentifier: "recommendationHomeCell")
     }
+    
+    @IBAction func unwind( _ seg: UIStoryboardSegue) {
+        if let sourceViewController = seg.source as? AddSalaryController {
+            salary = sourceViewController.dataPassed
+            setupView()
+        }
+    }
 
 }
 
@@ -82,7 +91,7 @@ extension HomeController :UITableViewDelegate,UITableViewDataSource,EmptyStateVi
     
     
     func didClickButtonAddSalary() {
-        self.performSegue(withIdentifier: "toAddSalary", sender: nil)
+        self.performSegue(withIdentifier: "toAddSalary", sender: self)
     }
     
 }
