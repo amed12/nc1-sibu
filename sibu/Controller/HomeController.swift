@@ -8,16 +8,21 @@
 import UIKit
 
 class HomeController: UIViewController {
-   
     
-
     @IBOutlet weak var homeTableView: UITableView!
     
+    @IBOutlet weak var tableHeight: NSLayoutConstraint!
     var isRecommendationEmpty = true
     var salary = 6500000.0
     var model = RecommendationModel()
     
     @IBOutlet weak var lblSalary: UILabel!
+    
+    //to make table view height size fit with content
+    override func viewWillLayoutSubviews() {
+        super.updateViewConstraints()
+        self.tableHeight?.constant = self.homeTableView.contentSize.height + 90.0
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -73,6 +78,7 @@ extension HomeController :UITableViewDelegate,UITableViewDataSource,EmptyStateVi
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return isRecommendationEmpty ? 350 : 65
     }
+    
     
     func didClickButtonAddSalary() {
         self.performSegue(withIdentifier: "toAddSalary", sender: nil)
