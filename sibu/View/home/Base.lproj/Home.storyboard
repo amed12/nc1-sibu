@@ -39,7 +39,7 @@
                                     <constraint firstAttribute="height" constant="2" id="Hnr-eL-lDZ"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EB6-CX-87a">
+                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EB6-CX-87a">
                                 <rect key="frame" x="0.0" y="271" width="390" height="573"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>

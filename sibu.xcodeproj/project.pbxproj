@@ -18,6 +18,7 @@
 		4A8533362641B80100EEB70B /* EmptyStateViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8533342641B80100EEB70B /* EmptyStateViewCell.xib */; };
 		4A85333B2641B82C00EEB70B /* RecommendedAllocationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8533392641B82C00EEB70B /* RecommendedAllocationViewCell.swift */; };
 		4A85333C2641B82C00EEB70B /* RecommendedAllocationViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A85333A2641B82C00EEB70B /* RecommendedAllocationViewCell.xib */; };
+		4AB27CE7264237570006D5CA /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB27CE6264237570006D5CA /* DefaultButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		4A8533342641B80100EEB70B /* EmptyStateViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateViewCell.xib; sourceTree = "<group>"; };
 		4A8533392641B82C00EEB70B /* RecommendedAllocationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedAllocationViewCell.swift; sourceTree = "<group>"; };
 		4A85333A2641B82C00EEB70B /* RecommendedAllocationViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendedAllocationViewCell.xib; sourceTree = "<group>"; };
+		4AB27CE6264237570006D5CA /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		4A85332E2641B61200EEB70B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4AB27CE6264237570006D5CA /* DefaultButton.swift */,
 				4A8533312641B6ED00EEB70B /* home */,
 			);
 			path = View;
@@ -200,6 +203,7 @@
 				4A45E9612640FF4D0062EDC3 /* AppDelegate.swift in Sources */,
 				4A85333B2641B82C00EEB70B /* RecommendedAllocationViewCell.swift in Sources */,
 				4A45E9632640FF4D0062EDC3 /* SceneDelegate.swift in Sources */,
+				4AB27CE7264237570006D5CA /* DefaultButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
