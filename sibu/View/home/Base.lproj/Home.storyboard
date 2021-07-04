@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeController" customModule="sibu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kjb-fF-2eS">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="500"/>
+                                <color key="backgroundColor" red="0.18823529411764706" green="0.011764705882352941" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="aGr-Wa-UEi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bghome" translatesAutoresizingMaskIntoConstraints="NO" id="FSp-Fb-IOB">
+                                <rect key="frame" x="0.0" y="150" width="390" height="660"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SiBu." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wf-oj-GJR">
+                                <rect key="frame" x="155" y="46" width="82" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsk-3y-u76">
+                                <rect key="frame" x="0.0" y="90" width="390" height="2"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="Hnr-eL-lDZ"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EB6-CX-87a">
+                                <rect key="frame" x="0.0" y="275" width="390" height="449"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="449" id="zyB-Ug-ETa"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="X9s-ou-sUp"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="j7i-zd-Uv7"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nq7-Fa-Z0x">
+                                <rect key="frame" x="16" y="121" width="91" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Set" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gv6-9k-Tn0">
+                                <rect key="frame" x="16" y="150" width="358" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Q28-ON-aqj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seH-GV-dSG" customClass="DefaultButton" customModule="sibu" customModuleProvider="target">
+                                <rect key="frame" x="95" y="740" width="200" height="32"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.01176470588" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ChA-MR-B0f"/>
+                                    <constraint firstAttribute="height" constant="32" id="ZRW-kz-aNx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Reset Salary">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FI1-LR-W5D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FSp-Fb-IOB" secondAttribute="trailing" id="6HQ-M6-Osd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gv6-9k-Tn0" secondAttribute="trailing" constant="16" id="6qp-Kv-PlN"/>
+                            <constraint firstItem="FSp-Fb-IOB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="99T-B9-QtR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="seH-GV-dSG" secondAttribute="trailing" constant="95" id="A0B-4o-QEn"/>
+                            <constraint firstItem="EB6-CX-87a" firstAttribute="top" secondItem="FSp-Fb-IOB" secondAttribute="top" constant="125" id="Hum-Cb-lbn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7wf-oj-GJR" secondAttribute="trailing" constant="153" id="KQR-IN-dTs"/>
+                            <constraint firstItem="FSp-Fb-IOB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QR8-bZ-SK7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FSp-Fb-IOB" secondAttribute="bottom" id="UDQ-PQ-A8U"/>
+                            <constraint firstItem="seH-GV-dSG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="UMG-VU-LSu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nq7-Fa-Z0x" secondAttribute="trailing" constant="283" id="UsM-lA-aiy"/>
+                            <constraint firstItem="wsk-3y-u76" firstAttribute="top" secondItem="7wf-oj-GJR" secondAttribute="bottom" constant="3" id="Xi3-Hb-PyL"/>
+                            <constraint firstAttribute="trailing" secondItem="kjb-fF-2eS" secondAttribute="trailing" id="ZmD-A6-oN1"/>
+                            <constraint firstItem="wsk-3y-u76" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bSO-en-1l6"/>
+                            <constraint firstItem="Gv6-9k-Tn0" firstAttribute="top" secondItem="FSp-Fb-IOB" secondAttribute="top" id="ctx-99-Es2"/>
+                            <constraint firstItem="kjb-fF-2eS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dRr-AB-Our"/>
+                            <constraint firstItem="EB6-CX-87a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eBV-fA-FrB"/>
+                            <constraint firstItem="seH-GV-dSG" firstAttribute="top" secondItem="EB6-CX-87a" secondAttribute="bottom" constant="16" id="hsg-aV-czR"/>
+                            <constraint firstAttribute="trailing" secondItem="wsk-3y-u76" secondAttribute="trailing" id="kHh-ca-3d5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EB6-CX-87a" secondAttribute="trailing" id="liH-st-twI"/>
+                            <constraint firstItem="7wf-oj-GJR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="oTI-lv-y43"/>
+                            <constraint firstItem="7wf-oj-GJR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="pEo-Tn-jkC"/>
+                            <constraint firstItem="nq7-Fa-Z0x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sbD-nU-dqG"/>
+                            <constraint firstItem="Gv6-9k-Tn0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tip-Qq-jck"/>
+                            <constraint firstItem="nq7-Fa-Z0x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="vHj-IJ-Cq6"/>
+                            <constraint firstItem="kjb-fF-2eS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zJf-sa-ddJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gv6-9k-Tn0" secondAttribute="bottom" constant="619" id="zqM-aK-rRm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnReset" destination="seH-GV-dSG" id="o5X-Qx-Om2"/>
+                        <outlet property="homeTableView" destination="EB6-CX-87a" id="dKX-ej-4Zj"/>
+                        <outlet property="lblSalary" destination="Gv6-9k-Tn0" id="iqX-nf-vU2"/>
+                        <outlet property="tableHeight" destination="zyB-Ug-ETa" id="vZY-ZS-hqz"/>
+                        <segue destination="sUL-8u-gaI" kind="show" identifier="toAddSalary" id="9gA-9Z-TeA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.384615384615387" y="88.151658767772503"/>
+        </scene>
+        <!--AddSalary-->
+        <scene sceneID="rEF-x5-quj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddSalary" id="sUL-8u-gaI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hx2-my-BMc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z10-sf-fYZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bghome" width="414" height="572"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
