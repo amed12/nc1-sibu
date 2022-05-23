@@ -55,12 +55,10 @@ class HomeController: UIViewController {
         if let sourceViewController = seg.source as? AddSalaryController {
             salary = sourceViewController.dataPassed
             setupView()
-            btnReset.isHidden = false
         }
     }
     @IBAction func onClickReset(_ sender: Any) {
         salary = 0
-        btnReset.isHidden = true
         lblSalary.text = "Not Set"
         setupView()
     }
@@ -78,6 +76,7 @@ extension HomeController :UITableViewDelegate,UITableViewDataSource,EmptyStateVi
             let cell = homeTableView.dequeueReusableCell(withIdentifier: "emptyHomeCell", for: indexPath) as? EmptyStateViewCell
             cell?.delegateButton = self
             cell?.selectionStyle = .none
+            btnReset.isHidden = true
             return cell!
         }else{
             let cell = homeTableView.dequeueReusableCell(withIdentifier: "recommendationHomeCell", for: indexPath) as? RecommendedAllocationViewCell
@@ -88,6 +87,7 @@ extension HomeController :UITableViewDelegate,UITableViewDataSource,EmptyStateVi
             cell?.icon.image = UIImage(named: recommendation.image)
             cell?.nominal.text = doubleToRupiah(nominal)
             cell?.selectionStyle = .none
+            btnReset.isHidden = false
             return cell!
         }
         
